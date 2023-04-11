@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Nunito', sans-serif; */
+  box-sizing: border-box;
+  }
+  /* logo design */
+  .logo{
+    margin-top: -4rem;
+  }
+  /* left desgin */
+  .left-container{
+    width: 50%;
+    height: 100%;
+  }
+  /* right container design */
+  .right-container{
+    border:3px solid #acb0bd81;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    width: 60%;
+    padding: 30px 20px 20px 50px;
+  }
+  .right-container p:nth-child(1){
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
+    color: #555B6C;
+    font-weight: 400;
+  }
+  .right-container p:nth-child(2){
+    position: relative;
+    top: -0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #555B6C;
+    font-weight: 700;
+  }
+  
+  .right-container p:nth-child(3){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #717684;
+    font-weight: 300;
+    margin: -7px 0px 0px 0px;
+  }
+  .right-container .other-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-container .other-option .rem , .forget{
+    color: #555B6C;
+    font-family: 'Nunito', sans-serif;
+  }
+  .right-container .other-option p{
+    font-size: 15px;
+  }
+  .right-container .other-option .rem p{
+    color:#707070 ;
+    font-weight: 500;
+  }
+  .right-container .other-option .forget p{
+    color: #555B6C;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .right-container .login-btn{
+    background-color: #ED1C24;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .right-container .create-acc{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5px 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+    border: 3px solid #71768477;
+    border-radius: 20px;
+    color: #555B6C;
+    cursor: pointer;
+  }
+  .signin-option{
+    background-color: white;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .sign-btn{
+    width: 70%;
+    
+  }
+  /* login card design */
+  .login-page {
+    font-family: sans-serif;
+    background: #ffffff;
+  }
+  form{
+    margin-top: 2rem;
+  }
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 30px #00000033;
+    border-radius: 30px;
+    display: flex;
+  }
+  
+  .heading-login-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .user-box {
+    position: relative;
+  }
+  
+  .user-box-input {
+    width: 100%;
+    padding: 10px 0 0 0 ;
+    font-size: 18px;
+    color: #394054;
+    margin-bottom: 30px;
+    font-family: 'Montserrat',sans-serif;
+    border: none;
+    font-weight: 500;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+  }
+  i{
+    color: #707070;
+  }
+  .user-box-label {
+    font-family: 'Montserrat',sans-serif;
+    position: absolute;
+    text-transform: capitalize;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #707070;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-box .user-box input:focus~label,
+  .login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    /* font-family: 'Montserrat',sans-serif; */
+    color: #555B6C;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .login-box-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ED1C24;
+    font-size: 14px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 30px;
+  }
+  
+  .login-box a:hover {
+    cursor: pointer;
+    color: #000000;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8ab0df);
+    animation: btn-1 1.7s linear infinite;
+  }
+  
+  @keyframes btn-1 {
+    0% {
+        left: -100%;
+    }
+  
+    50%,
+    100% {
+        left: 100%;
+    }
+  }
+  
+  .login-box-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #8ab0df);
+    animation: btn-2 1.7s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-2 {
+    0% {
+        top: -100%;
+    }
+  
+    50%,
+    100% {
+        top: 100%;
+    }
+  }
+  
+  .login-box-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #8ab0df);
+    animation: btn-3 1.7s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes btn-3 {
+    0% {
+        right: -100%;
+    }
+  
+    50%,
+    100% {
+        right: 100%;
+    }
+  }
+  
+  .login-box-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #8ab0df);
+    animation: btn-4 1.7s linear infinite;
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes btn-4 {
+    0% {
+        bottom: -100%;
+    }
+  
+    50%,
+    100% {
+        bottom: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) and (min-width: 400px) {
+    .login-box {
+        width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .login-box {
+        width: 200px;
+    }
+  
+    .heading-login-box {
+        font-size: 16px !important;
+    }
+  
+    .user-box-input {
+        font-size: 12px;
+    }
+  
+    .user-box-label {
+        font-size: 12px;
+    }
+    .login-box-button {
+        font-size: 12px;
+    }
+  }
+
